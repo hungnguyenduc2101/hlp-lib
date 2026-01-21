@@ -14,6 +14,7 @@ project(hlp-lib)
 include("${CMAKE_CURRENT_LIST_DIR}/share/cmake/hlp/hlp-config.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/share/cmake/log/log-config.cmake")
 
+get_target_property(_imported_configs hlp::hlp IMPORTED_CONFIGURATIONS)
 get_target_property(_imported_configs hlp::log IMPORTED_CONFIGURATIONS)
 foreach(_target hlp::hlp hlp::log)
     set_target_properties(${_target} PROPERTIES IMPORTED_GLOBAL TRUE)
