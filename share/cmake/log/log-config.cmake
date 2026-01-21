@@ -62,7 +62,6 @@ endif()
 add_library(hlp::log STATIC IMPORTED)
 
 set_target_properties(hlp::log PROPERTIES
-  INTERFACE_COMPILE_FEATURES "cxx_std_20"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "hlp::hlp;hlp::hlp"
 )
