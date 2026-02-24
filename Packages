@@ -68,3 +68,17 @@ Section: devel
 Priority: optional
 Description: Helper library
 
+Package: hlp
+Version: 6.1.0
+Architecture: amd64
+Maintainer: Dev Team
+Installed-Size: 790
+Filename: ./pool/main/hlp_6.1.0_amd64.deb
+Size: 569052
+MD5sum: 1d0d52c3a790e82a6797699b45d162bf
+SHA1: 950dda3973b9bf4a734ca987d4010af9de6777f3
+SHA256: a48055fd50914535c76cc59601630af9be2dedd63ca6396526a19ca9dc996dd6
+Section: devel
+Priority: optional
+Description: Helper library
+
