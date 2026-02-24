@@ -54,3 +54,17 @@ Section: devel
 Priority: optional
 Description: Helper library
 
+Package: hlp
+Version: 4.1.0
+Architecture: amd64
+Maintainer: Dev Team
+Installed-Size: 787
+Filename: ./pool/main/hlp_4.1.0_amd64.deb
+Size: 568302
+MD5sum: f423bb913d9ed75d13e896382f17afb1
+SHA1: d84bc3af2e52c329f45860560e061de34e0d387f
+SHA256: f0c7208cbe8c3f2df0b61c33c8d05d4099978c191a955a5c4671b2c2bc648508
+Section: devel
+Priority: optional
+Description: Helper library
+
