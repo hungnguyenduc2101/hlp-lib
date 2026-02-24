@@ -72,7 +72,7 @@ if(NOT CMAKE_VERSION VERSION_LESS "3.23.0")
       FILE_SET "log_headers"
       TYPE "HEADERS"
       BASE_DIRS "${_IMPORT_PREFIX}/include"
-      FILES "${_IMPORT_PREFIX}/include/log/log_stream.h" "${_IMPORT_PREFIX}/include/log/logger.h"
+      FILES "${_IMPORT_PREFIX}/include/log/log_stream.h" "${_IMPORT_PREFIX}/include/log/logger.h" "${_IMPORT_PREFIX}/include/log/async_file_logger.h"
   )
 else()
   set_property(TARGET hlp::log
