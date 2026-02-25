@@ -12,15 +12,15 @@ class logger;
 }
 
 namespace hlp {
-  enum LogLevel {
-    TRACE = 0,
-    DEBUG,
-    INFO,
-    WARN,
-    ERROR,
-    FATAL,
-    NUMBER_OF_LOG_LEVELS
-  };
+enum LogLevel {
+  TRACE = 0,
+  DEBUG,
+  INFO,
+  WARN,
+  ERROR,
+  FATAL,
+  NUMBER_OF_LOG_LEVELS
+};
 class RawLogger : public NonCopyable {
  public:
   ~RawLogger();
@@ -150,6 +150,13 @@ class Logger : public NonCopyable {
     static std::function<void(const char* msg, const uint64_t len)> outputFunc =
             Logger::defaultOutputFunction;
     return outputFunc;
+  }
+
+  static bool isDefaultOutputFunc(size_t index = -1) {
+    using FuncType = void (*)(const char*, const uint64_t);
+    FuncType* target_ptr = index < 0 ? outputFunc_().target<FuncType>()
+                                     : outputFunc_(index).target<FuncType>();
+    return target_ptr != nullptr && *target_ptr == &defaultOutputFunction;
   }
 
   static std::function<void()>& flushFunc_() {
