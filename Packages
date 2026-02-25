@@ -153,6 +153,20 @@ Priority: optional
 Description: Helper library
 
 Package: hlp
+Version: 20.1.0
+Architecture: amd64
+Maintainer: Dev Team
+Installed-Size: 795
+Filename: ./pool/main/hlp_20.1.0_amd64.deb
+Size: 573318
+MD5sum: b58bac43f0f0ddd3a042678a76798d82
+SHA1: a367aa37ee1b5476edd3cbba961e7cc79071296e
+SHA256: d8805f90eb5643899959e838d0ec2e2078579b3ccf09c745811df3710047ea03
+Section: devel
+Priority: optional
+Description: Helper library
+
+Package: hlp
 Version: 3.1.0
 Architecture: amd64
 Maintainer: Dev Team
