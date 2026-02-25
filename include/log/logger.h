@@ -88,10 +88,10 @@ class Logger : public NonCopyable {
 
   Logger& setIndex(int index) {
     index_ = index;
-    formatLogLevel();
     return *this;
   }
   LogStream& stream() {
+    formatLogLevel();
     return log_stream_;
   }
 
