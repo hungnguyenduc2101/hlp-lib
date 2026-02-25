@@ -152,7 +152,7 @@ class Logger : public NonCopyable {
     return outputFunc;
   }
 
-  static bool isDefaultOutputFunc(size_t index = -1) {
+  static bool isDefaultOutputFunc(int index = -1) {
     using FuncType = void (*)(const char*, const uint64_t);
     FuncType* target_ptr = index < 0 ? outputFunc_().target<FuncType>()
                                      : outputFunc_(index).target<FuncType>();
@@ -206,6 +206,7 @@ class Logger : public NonCopyable {
   }
 
   void formatTime();
+  void formatLogLevel();
   LogStream log_stream_;
   Date date_{ Date::now() };
   SourceFile source_file_;
